@@ -15,9 +15,11 @@
     box-sizing: border-box;
 
     flex-grow: 1;
+    
+    transition: 0.3ms ease-in-out;
 }
 
 .navigation__link:hover{
-
+    color: rgba(255, 255, 255, 0.4);
 }
 
