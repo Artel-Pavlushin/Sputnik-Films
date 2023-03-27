@@ -1,14 +1,11 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
 
-
 @import url(../blocks/page/page.css);
 
 /*header*/
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
-
-
 
 /*contact*/
 @import url(../blocks/contact/contact.css);
@@ -24,7 +21,6 @@
 @import url(../blocks/navigation/__link/navigation__link.css);
 @import url(../blocks/navigation/__list/navigation__list.css);
 
-
 /*Титул*/
 @import url(../blocks/title/title.css);
 @import url(../blocks/title/__text/title__text.css);
@@ -37,14 +33,20 @@
 @import url(../blocks/image-container/__image/image-container__image.css);
 @import url(../blocks/image-container/__image/_blured/image-container__image_blured.css);
 
-
 /*video-tag*/
 @import url(../blocks/video-tag/video-tag.css);
 @import url(../blocks/video-tag/__point/video-tag__point.css);
 @import url(../blocks/video-tag/__text/video-tag__text.css);
 
 
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.015em;
 
+}
 
 
 .tabs {
@@ -263,7 +265,7 @@
   display: flex;
   flex-direction: column;
 
-  max-width: 604px;
+  max-width: 860px;
 }
 
 .image-container__image_project {
@@ -289,15 +291,70 @@
   font-size: 16px;
   line-height: 125%;
   letter-spacing: 0.015em;
-  
+
 }
 
-.project__tags{
- color: rgba(255, 255, 255, 0.2);
+.project__tags {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.projects__section-1 {
+  margin: 0 auto;
+  margin-top: 148px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(348px, auto));
+  gap: 36px;
+  justify-content: space-between;
+}
+
+.projects__vertical-descriprion {
+  max-width: 348px;
+  display: flex;
+
+  justify-content: space-between;
+
+  background-image: url(../images/right__decor.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+   height: 100%;
+
+   background-position: right;
+
+}
+
+.projects__factoid {
+
+  margin-top: 36px;
+  margin-right: 36px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+
+
+}
+
+.projects__factoid-number {
+  font-family: 'Polonium';
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+
+  align-self: end;
 }
 
 
+.projects__factoid-text {
+  max-width: 140px;
+  text-align: right;
 
+  align-self: end;
+}
 
 .header-background {
   background-image: url(../images/header-background.svg);

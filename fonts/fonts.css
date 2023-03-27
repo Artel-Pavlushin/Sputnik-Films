@@ -12,3 +12,9 @@
     font-weight: 500;
 }
 
+@font-face {
+  src:
+    url(../fonts/Polonium/Polonium-Bold.woff) format('woff2');
+    font-family: 'Polonium';
+    font-weight: 700;
+}
