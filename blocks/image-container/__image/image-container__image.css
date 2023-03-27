@@ -1,0 +1,11 @@
+.image-container__image{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+}

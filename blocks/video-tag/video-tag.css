@@ -1,0 +1,25 @@
+.video-tag{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px 6px 15px;
+    gap: 11px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+
+    justify-self: start;
+    align-self: start;
+    grid-row: 1;
+    grid-column: 1;
+
+    position: relative;
+    z-index: 4;
+
+    text-decoration-line: none;
+    
+
+}

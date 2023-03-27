@@ -1,0 +1,12 @@
+.video-tag__text{
+    margin: 0;
+    padding: 0;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+}
