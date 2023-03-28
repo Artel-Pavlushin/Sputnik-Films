@@ -1,4 +1,4 @@
-.video-tag{
+.video-tag {
     margin: 0;
     padding: 0;
 
@@ -9,7 +9,7 @@
     gap: 11px;
 
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
+    border-radius: 20px;
 
     justify-self: start;
     align-self: start;
@@ -20,6 +20,8 @@
     z-index: 4;
 
     text-decoration-line: none;
-    
+
+    text-transform: uppercase;
+
 
 }
