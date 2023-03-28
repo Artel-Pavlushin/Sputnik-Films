@@ -103,6 +103,10 @@ p {
 
 }
 
+.video{
+  max-width: 604px;
+}
+
 
 .tabs {
   font-size: 0;
