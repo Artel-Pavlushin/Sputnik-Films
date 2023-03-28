@@ -914,6 +914,9 @@ h2 {
   gap: 8px;
 
   max-width: 242px;
+
+  position: sticky;
+  top: 2em;
 }
 
 
