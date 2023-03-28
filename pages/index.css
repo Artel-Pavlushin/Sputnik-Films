@@ -1,7 +1,12 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
 
+
+
+
 @import url(../blocks/page/page.css);
+
+
 
 /*header*/
 @import url(../blocks/header/header.css);
@@ -37,6 +42,50 @@
 @import url(../blocks/video-tag/video-tag.css);
 @import url(../blocks/video-tag/__point/video-tag__point.css);
 @import url(../blocks/video-tag/__text/video-tag__text.css);
+
+
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+
+  letter-spacing: 0.015em;
+
+  color: rgba(255, 255, 255, 0.2);
+
+}
+
+
+* {
+  outline: none;
+  border-width: 0;
+}
+
+
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.015em;
+
+}
+
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+
+  letter-spacing: 0.015em;
+  text-decoration-line: underline;
+
+  color: rgba(255, 255, 255, 0.2);
+
+}
+
 
 * {
   outline: none;
@@ -557,11 +606,16 @@ p {
 
   justify-self: start;
 
+  text-align: left;
+
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer__body {
   margin-top: 74px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  gap: 36px;
 }
 
 ul {
@@ -572,7 +626,7 @@ ul {
 
 .footer__form {
   margin: 0;
-  padding: 24px 24px 32px;
+  padding: 22px 22px 32px;
 
   max-width: 396px;
 
@@ -581,8 +635,11 @@ ul {
 
   background-image: url(../images/FON.svg);
   background-size: cover;
+  background-repeat: no-repeat;
 
   list-style-type: none;
+
+  box-sizing: border-box;
 }
 
 * {
@@ -652,12 +709,14 @@ ul {
   cursor: pointer;
 }
 
-.tabs>input[type="radio"]:checked+label {
+.footer__form-buttons>input[type="radio"]:checked+label {
   color: #1C1C1C;
   background: rgba(255, 255, 255, 0.4);
 }
 
 .footer__buttons-header {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 20px;
   /* identical to box height, or 125% */
@@ -669,11 +728,42 @@ ul {
 
   color: rgba(255, 255, 255, 0.1);
 
+  border: none;
 }
+
 
 .footer__buttons-container {
   display: flex;
   flex-direction: column;
   padding: 35px 0px 0px;
   gap: 12px;
+}
+
+.footer__authors {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+}
+
+.footer__author {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.footer__author-link {
+  margin-top: 65px;
+}
+
+.footer__policy{
+  margin-top: 144px;
+  padding-left: 18px;
+}
+
+
+.footer__policy-link {
+  margin: 0 auto;
+
 }

@@ -12,6 +12,8 @@
     justify-self: end;
 
     transition: 0.3s ease-in-out;
+
+    text-decoration: none;
 }
 
 .anchor-button:hover{
