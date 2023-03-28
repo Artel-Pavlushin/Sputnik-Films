@@ -319,10 +319,19 @@ p {
 
 .image-container__image_project {
   grid-row: 2;
+
+  border-radius: 16px;
+
+  position: relative;
+  z-index: 2;
 }
 
 .image-container__image_blured_project {
   grid-row: 2;
+  position: relative;
+  z-index: 0;
+
+  filter: blur(30px);
 }
 
 .project__description {
