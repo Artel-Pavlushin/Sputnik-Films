@@ -768,7 +768,7 @@ ul {
 
 }
 
-.footer__buttons-contairer{
+.footer__buttons-contairer {
   margin-top: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr;
@@ -802,17 +802,17 @@ ul {
 
 }
 
-.footer__form-button:hover{
+.footer__form-button:hover {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  
+
 }
 
-.footer__form-button:active{
+.footer__form-button:active {
   border: none;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer__bottom{
+.footer__bottom {
   margin-top: 80px;
   margin-bottom: 36px;
   display: grid;
@@ -823,14 +823,14 @@ ul {
 }
 
 
-.footer__logo{
+.footer__logo {
   justify-self: start;
   align-self: center;
 
   max-width: 152px;
 }
 
-.pavlushin{
+.pavlushin {
   justify-self: center;
   align-self: center;
 
@@ -841,7 +841,84 @@ ul {
   font-size: 12px;
 }
 
-.copyright{
+.copyright {
   justify-self: end;
   align-self: center;
+}
+
+
+
+
+.portfolio {
+  max-width: 1244px;
+  margin: 0 auto;
+  margin-top: 58px;
+  width: calc(100% - 192px);
+
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 36px;
+}
+
+.portfolio__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__category-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+
+  /* Прозрачность/20 */
+
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.portfolio__categoryes {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  max-width: 242px;
+}
+
+
+.portfolio__category {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: 0;
+  border-radius: 0;
+
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+
+  background: none;
+
+  color: rgba(255, 255, 255, 0.6);
+
+}
+
+
+.portfolio__category:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+}
+
+.portfolio__category:active {
+  color: #1C1C1C;
+  border: 1px solid rgba(255, 255, 255, 0); 
+  background-color: rgba(255, 255, 255, 0.1);
 }
