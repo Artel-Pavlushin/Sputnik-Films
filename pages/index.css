@@ -894,7 +894,18 @@ h2 {
   flex-direction: column;
 
   max-width: 348px;
+
+  gap: 48px;
+
+
 }
+
+.tags__container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 
 .portfolio__right {
   max-width: 860px;
@@ -913,10 +924,9 @@ h2 {
 
   color: rgba(255, 255, 255, 0.2);
 
-  margin-bottom: 16px;
 }
 
-.portfolio__categoryes {
+.portfolio__categories {
   display: flex;
   flex-wrap: wrap;
 
@@ -924,10 +934,17 @@ h2 {
 
   max-width: 242px;
 
-  position: sticky;
-  top: 2em;
 }
 
+
+.stiky{
+  position: sticky;
+  top: 2em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
 
 .portfolio__category {
   -webkit-appearance: none;
@@ -960,8 +977,37 @@ h2 {
 .portfolio__category:active {
   color: #1C1C1C;
   border: 1px solid rgba(255, 255, 255, 0);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
 }
+
+.portfolio__tag{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border: 0;
+  border-radius: 0;
+
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0px;
+
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  background: none;
+
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.portfolio__tag:hover {
+  color: rgba(255, 255, 255, 0.4);
+
+}
+
+.portfolio__tag:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 
 .portfolio__title {
   margin: 0;
