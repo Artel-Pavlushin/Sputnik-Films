@@ -903,7 +903,6 @@ h2 {
   letter-spacing: 0.015em;
   text-transform: uppercase;
 
-  color: rgba(255, 255, 255, 0.6);
 
 }
 
@@ -1112,12 +1111,13 @@ h2 {
 
 .team__lead {
   padding-top: 2em;
+  padding-bottom: 2em;
   display: flex;
   flex-direction: column;
   gap: 64px;
 
   border-left: 1px solid rgba(255, 255, 255, 0.1);
-  border-right: 1px  solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .lead-text {
@@ -1140,11 +1140,13 @@ h2 {
 .team__steamers {
   display: flex;
   justify-content: space-between;
-  
+
   align-items: center;
 }
 
+
 .team__list {
+  
   list-style-type: none;
 
   display: flex;
@@ -1172,10 +1174,82 @@ h2 {
 }
 
 
+
+
+
 .align-center {
   text-align: center;
 }
 
-.team__authors{
+
+
+
+.team__authors {
+  display: inline-flex;
+  width: 100%;
+ box-sizing: border-box;
+ padding-left: 120px;
+
+}
+
+.team__authors-list {
+  padding: 28px;
+  overflow-x: scroll;
+
+  display: inline-flex;
+  gap: 36px;
+
+  box-sizing: border-box;
+
+}
+
+
+.team__portraint{
+  display: grid;
+
+  max-width: 125px;
+  max-height: 125px;
+
+  grid-template-columns: repeat(1 1fr);
+  grid-row: 1;
+  grid-column: 1;
+}
+
+
+.team__author {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
   
+}
+
+.team__author-text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  min-width: 220px;
+  
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color:  rgba(255, 255, 255, 0.1) none;
+}
+
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: none;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+ 
 }
