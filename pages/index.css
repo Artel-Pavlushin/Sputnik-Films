@@ -124,14 +124,6 @@ a {
 
 
 
-p {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 125%;
-  letter-spacing: 0.015em;
-
-}
 
 
 
@@ -258,6 +250,7 @@ p {
 
 .tabs>label:not(:first-of-type) {
   border-left: none;
+
 }
 
 .tabs>input[type="radio"]:checked+label {
@@ -406,6 +399,7 @@ p {
   -webkit-mask-position: center center;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
+
 }
 
 .video-ulibka {
