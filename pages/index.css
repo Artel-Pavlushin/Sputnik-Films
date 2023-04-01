@@ -821,19 +821,26 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height, or 125% */
 
   letter-spacing: 0.015em;
   text-transform: uppercase;
 
-  /* Прозрачность/10 */
-
-  color: rgba(255, 255, 255, 0.4);
+  color:rgba(255, 255, 255, 0.4);
 
   background-color: none;
 
   background: none;
 }
+
+input::placeholder{
+  color:rgba(255, 255, 255, 0.1);
+}
+
+
+input:focus::placeholder{
+  color:rgba(255, 255, 255, 0.4);
+}
+
 
 .footer__form-buttons {
   font-size: 16px;
@@ -857,6 +864,7 @@ ul {
 
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 51px;
+
 
 
   justify-content: center;
@@ -885,6 +893,8 @@ ul {
 
   letter-spacing: 0.015em;
   text-transform: uppercase;
+
+  font-weight: 400;
 
   /* Прозрачность/10 */
 
