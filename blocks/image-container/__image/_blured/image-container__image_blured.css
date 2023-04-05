@@ -3,7 +3,7 @@
     padding: 0;
     position: relative;
     z-index: 2;
-    filter: blur(75px);
+    filter: blur(5.21vw);
     grid-row: 1;
     grid-column: 1;
     width: 100%;

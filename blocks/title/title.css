@@ -1,8 +1,16 @@
-.title{
-    display: block;
-    margin:0 auto;
-    width:calc(100vw - 206px);
-    margin-top: 64px;
-
+.title {
+    margin: 0 auto;
+    margin-top: 4.44vw;
     max-width: 1244px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+
+    height: 100%;
+    width: calc(100% - 196px);
+  
 }

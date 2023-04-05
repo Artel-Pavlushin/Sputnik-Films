@@ -1,12 +1,12 @@
 .video-tag__point{
-    width: 10px;
-    height: 10px;
+    width: 0.69vw;
+    height: 0.69vw;
     background-color: #E30613;
     border-radius: 50%;
     filter: blur(5px);
 }
 
-.video-tag:hover  .video-tag__point{
+.project:hover  .video-tag__point{
     animation: size 1s ease-in-out alternate infinite;
  }
  

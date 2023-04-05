@@ -1,12 +1,7 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
 
-
-
-
 @import url(../blocks/page/page.css);
-
-
 
 /*header*/
 @import url(../blocks/header/header.css);
@@ -74,22 +69,10 @@
 
 }
 
-a {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
-
-  letter-spacing: 0.015em;
-
-  color: rgba(255, 255, 255, 0.2);
-
-}
-
-
 * {
   outline: none;
   border-width: 0;
-  font-size: 16px;
+  font-size: 1.11vw;
 }
 
 
@@ -97,7 +80,7 @@ a {
 p {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 1.11vw;
   line-height: 125%;
   letter-spacing: 0.015em;
 
@@ -106,7 +89,7 @@ p {
 
 a {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.11vw;
   line-height: 125%;
 
   letter-spacing: 0.015em;
@@ -124,16 +107,12 @@ a {
 
 
 
-
-
-
-
 .tabs {
   font-size: 0;
   max-width: 1246px;
   margin: 0 auto;
-  margin-top: 76px;
-  width: calc(100% - 204px);
+  margin-top: 5.28vw;
+  width: 86.53vw;
   color: rgba(255, 255, 255, 0.2);
   display: grid;
   grid-template-columns: repeat(7 1fr);
@@ -154,19 +133,59 @@ a {
 }
 
 
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4,
+#tab-btn-5:checked~#content-5,
+#tab-btn-6:checked~#content-6,
+#tab-btn-7:checked~#content-7 {
+  display: block;
+  grid-row: 2;
+  grid-area: content;
+}
+
+
+.tabs>label {
+  padding: 0;
+  margin: 0;
+  grid-row: 1;
+  display: flex;
+
+  padding-bottom: 2.50vw;
+
+  user-select: none;
+  cursor: pointer;
+
+  place-self: center;
+
+  align-items: center;
+  user-select: none;
+  justify-items: center;
+
+  text-align: center;
+  font-size: 1.11vw;
+  line-height: 1.25;
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
 .tabs__content-container {
   margin: 0;
   display: flex;
 
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 
-  height: 376px;
+  height: 26.11vw;
 }
 
 .tabs__lead-block {
   margin: 0;
   padding: 0;
-  padding-right: 26px;
+  padding-right: 1.81vw;
 
   max-width: 732px;
 
@@ -181,9 +200,9 @@ a {
 .tabs__lead-text {
   margin: 0;
   padding: 0;
-  padding-top: 36px;
+  padding-top: 2.50vw;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.78vw;
   line-height: 125%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -198,49 +217,13 @@ a {
 
 .tabs__lead-tags-text {
   margin: 0;
-  padding: 4px 8px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  padding: 0.28vw 0.56vw;
   letter-spacing: 0.015em;
 }
 
 
-/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
-#tab-btn-1:checked~#content-1,
-#tab-btn-2:checked~#content-2,
-#tab-btn-3:checked~#content-3,
-#tab-btn-4:checked~#content-4,
-#tab-btn-5:checked~#content-5,
-#tab-btn-6:checked~#content-6,
-#tab-btn-7:checked~#content-7 {
-  display: block;
-  grid-row: 2;
-  grid-area: content;
-}
 
-.tabs>label {
-  padding: 0;
-  margin: 0;
-  grid-row: 1;
-  display: flex;
 
-  padding-bottom: 36px;
-
-  place-self: center;
-
-  align-items: center;
-  user-select: none;
-  justify-items: center;
-
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.25;
-
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-  cursor: pointer;
-}
 
 
 .tabls>label[tab-btn-1] {
@@ -258,6 +241,9 @@ a {
 }
 
 
+
+
+
 .tabs__description-container {
   margin: 0;
   padding: 0;
@@ -272,18 +258,13 @@ a {
 
 .tabs__desription-text {
   margin: 0;
-  padding-left: 36px;
-  padding-top: 36px;
+  padding-left: 2.50vw;
+  padding-top: 2.50vw;
 
   max-width: 240px;
 
   align-self: start;
   justify-self: start;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
-  letter-spacing: 0.015em;
 
   color: rgba(255, 255, 255, 0.6);
 }
@@ -297,21 +278,19 @@ a {
 
   align-self: end;
   justify-self: end;
-
-  gap: -20px;
 }
 
 .logos__item {
-  width: 72px;
-  height: 72px;
+  width: 5vw;
+  height: 5vw;
 
   opacity: 0.03;
 
   background-color: rgba(255, 255, 255);
-  box-shadow: 4px 4px 4px rgba(119, 11, 11, 0.952);
-  backdrop-filter: blur(15px);
+  box-shadow: 0.28vw 0.28vw 0.28vw rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1.04vw);
 
-  border-radius: 36px;
+  border-radius: 2.50vw;
 }
 
 
@@ -321,9 +300,9 @@ a {
   margin: 0 auto;
   padding: 0;
   display: block;
-  margin-top: 196px;
+  margin-top: 13.61vw;
 
-  width: calc(100% - 206px);
+  width: 86.39vw;
   max-width: 1244px;
 
 }
@@ -345,8 +324,6 @@ a {
 .image-container__image_project {
   grid-row: 2;
 
-  border-radius: 16px;
-
   position: relative;
   z-index: 2;
 }
@@ -364,7 +341,7 @@ a {
 
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr;
-  gap: 36px;
+  gap: 2.50vw;
 
   color: rgba(255, 255, 255, 0.4);
 }
@@ -372,11 +349,6 @@ a {
 .project__text {
   margin: 0;
   padding: 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
-  letter-spacing: 0.015em;
-
 }
 
 .project__tags {
@@ -511,30 +483,29 @@ a {
 
 .projects__section-1 {
   margin: 0 auto;
-  margin-top: 148px;
+  margin-top: 10.28vw;
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: minmax(min-content, max-content) minmax(140px, 348px);
   grid-auto-flow: dense;
-  gap: 36px;
+  gap: 2.50vw;
   justify-content: space-between;
 }
 
 .projects__section-2 {
-  margin-top: 96px;
+  margin-top: 6.67vw;
   width: 100%;
   max-width: 1244px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 36px;
-
+  gap: 2.50vw;
 }
 
 
 .projects__vertical-descriprion-1 {
-  padding: 36px;
+  padding: 2.50vw;
 
   max-width: 348px;
   display: flex;
@@ -551,7 +522,7 @@ a {
 }
 
 .projects__vertical-descriprion-2 {
-  padding-left: 36px;
+  padding-left: 2.50vw;
 
   max-width: 348px;
   display: flex;
@@ -568,13 +539,13 @@ a {
 }
 
 .projects__section-3 {
-  margin-top: 96px;
+  margin-top: 6.67vw;
   width: 100%;
   max-width: 1244px;
 
   display: grid;
   grid-template-columns: minmax(140px, 348px) auto;
-  gap: 36px;
+  gap: 2.50vw;
 }
 
 .left {
@@ -596,7 +567,7 @@ a {
 
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.11vw;
 
   width: 100%;
   max-width: 348px;
@@ -607,12 +578,14 @@ a {
 .projects__factoid-number {
   font-family: 'Polonium';
   font-weight: 700;
-  font-size: 58px;
+  font-size: 4.03vw;
   line-height: 110%;
   text-align: center;
   letter-spacing: 0.085em;
   text-transform: uppercase;
 
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.0);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2); 
 }
 
 
@@ -624,13 +597,13 @@ a {
 
 .quote {
   margin: 0;
-  margin-top: 180px;
+  margin-top: 12.50vw;
   padding: 0;
   width: 100%;
 
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 2.50vw;
 
   align-items: center;
 }
@@ -650,7 +623,7 @@ a {
 
   text-align: center;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.78vw;
   line-height: 125%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -661,7 +634,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1.11vw;
 
   text-align: center;
 }
@@ -670,8 +643,8 @@ a {
 .quote__portraint {
   display: grid;
 
-  max-width: 72px;
-  max-height: 72px;
+  width: 5vw;
+  height: 5vw;
 
   grid-template-columns: repeat(1 1fr);
   grid-row: 1;
@@ -711,8 +684,8 @@ a {
   background-image: url(../images/header-background.svg);
   position: relative;
   width: 100vw;
-  height: 816.98px;
-  top: -80px;
+  height: 56.67vw;
+  top: -5.56vw;
   z-index: 0;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -723,7 +696,7 @@ a {
 
 .footer {
   margin: 0 auto;
-  margin-top: 180px;
+  margin-top: 12.50vw;
 
   max-width: 1246px;
   width: calc(100% - 204px);
@@ -756,12 +729,12 @@ a {
 .footer__form-header {
   margin: 0 auto;
   padding: 0;
-  padding-top: 29px;
+  padding-top: 2.01vw;
 
   width: 100%;
 
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.78vw;
   line-height: 125%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -774,10 +747,10 @@ a {
 }
 
 .footer__body {
-  margin-top: 74px;
+  margin-top: 5.14vw;
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr;
-  gap: 36px;
+  gap: 2.50vw;
 }
 
 ul {
@@ -788,7 +761,7 @@ ul {
 
 .footer__form {
   margin: 0;
-  padding: 22px 22px 32px;
+  padding: 1.53vw 1.53vw 2.22vw;
 
   max-width: 396px;
 
@@ -796,7 +769,7 @@ ul {
   flex-direction: column;
 
   background-image: url(../images/FON.svg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 
   list-style-type: none;
@@ -814,13 +787,13 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 35px 0px 11px;
+  padding: 2.5vw 0px 0.83vw;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.11vw;
+  line-height: 1.39vw;
 
   letter-spacing: 0.015em;
   text-transform: uppercase;
@@ -843,7 +816,7 @@ input:focus::placeholder{
 
 
 .footer__form-buttons {
-  font-size: 16px;
+  font-size: 1.11vw;
   color: rgba(255, 255, 255, 0.2);
   display: grid;
   grid-template-columns: repeat(7 1fr);
@@ -863,16 +836,16 @@ input:focus::placeholder{
 
 
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 51px;
+  border-radius: 3.54vw;
 
 
 
   justify-content: center;
   align-items: center;
-  padding: 6px 12px;
+  padding: 0.42vw 0.83vw;
 
   text-align: center;
-  font-size: 16px;
+  font-size: 1.11vw;
   line-height: 1.25;
 
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
@@ -887,16 +860,11 @@ input:focus::placeholder{
 .footer__buttons-header {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height, or 125% */
+  font-size: 1.11vw;
+  line-height: 1.25;
 
   letter-spacing: 0.015em;
   text-transform: uppercase;
-
-  font-weight: 400;
-
-  /* Прозрачность/10 */
 
   color: rgba(255, 255, 255, 0.1);
 
@@ -907,31 +875,33 @@ input:focus::placeholder{
 .footer__buttons-container {
   display: flex;
   flex-direction: column;
-  padding: 35px 0px 0px;
-  gap: 12px;
+  padding: 2.5vw 0px 0px;
+  gap: 0.83vw;
+ 
 }
+
 
 .footer__authors {
   margin-top: 48px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 36px;
+  gap: 3.33vw;
 }
 
 .footer__author {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.67vw;
 }
 
 
 .footer__author-link {
-  margin-top: 65px;
+  margin-top: 4.51vw;
 }
 
 .footer__policy {
-  margin-top: 144px;
-  padding-left: 18px;
+  margin-top: 10vw;
+  padding-left: 1.25vw;
 }
 
 
@@ -941,7 +911,7 @@ input:focus::placeholder{
 }
 
 .footer__buttons-contairer {
-  margin-top: 32px;
+  margin-top: 2.22vw;
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr;
 }
@@ -959,14 +929,15 @@ input:focus::placeholder{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 
-  gap: 10px;
-  height: 72px;
+  gap: 0.69vw;
+  height: 5vw;
   width: 100%;
   max-width: 398px;
 
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  border-radius: 1.11vw;
 
   background: none;
 
@@ -985,11 +956,11 @@ input:focus::placeholder{
 }
 
 .footer__bottom {
-  margin-top: 80px;
-  margin-bottom: 36px;
+  margin-top: 5.56vw;
+  margin-bottom: 2.50vw;
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
-  gap: 36px;
+  gap: 2.5vw;
 
   color: rgba(255, 255, 255, 0.2);
 }
@@ -1010,7 +981,7 @@ input:focus::placeholder{
 
   text-decoration: none;
 
-  font-size: 12px;
+  font-size: 0.83vw;
 }
 
 .copyright {
@@ -1027,7 +998,7 @@ h2 {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.11vw;
   line-height: 125%;
 
   letter-spacing: 0.015em;
@@ -1041,12 +1012,12 @@ h2 {
 .portfolio {
   max-width: 1244px;
   margin: 0 auto;
-  margin-top: 58px;
-  width: calc(100% - 192px);
+  margin-top: 4.03vw;
+  width: 86.39vw;
 
   display: grid;
   grid-template-columns: 0.4285fr 1fr;
-  gap: 36px;
+  gap: 2.5vw;
 
   box-sizing: border-box;
 }
@@ -1057,7 +1028,7 @@ h2 {
 
   max-width: 348px;
 
-  gap: 48px;
+  gap: 3.33vw;
 
 
 }
@@ -1065,7 +1036,7 @@ h2 {
 .tags__container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.11vw;
 }
 
 
@@ -1075,14 +1046,11 @@ h2 {
 
 .portfolio__category-header {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height, or 125% */
+  font-size: 1.11vw;
+  line-height: 1.25;
 
   letter-spacing: 0.015em;
   text-transform: uppercase;
-
-  /* Прозрачность/20 */
 
   color: rgba(255, 255, 255, 0.2);
 
@@ -1092,7 +1060,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 
-  gap: 8px;
+  gap: 0.56vw;
 
   max-width: 242px;
 
@@ -1105,7 +1073,7 @@ h2 {
 
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 3.33vw;
 }
 
 .portfolio__category {
@@ -1118,11 +1086,11 @@ h2 {
 
   justify-content: center;
   align-items: center;
-  padding: 6px 12px;
-  gap: 8px;
+  padding: 0.42vw 0.83vw;
+  gap: 0.56vw;
 
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  border-radius: 1.11vw;
 
   background: none;
 
@@ -1152,7 +1120,7 @@ h2 {
 
   justify-content: center;
   align-items: center;
-  padding: 4px 0px;
+  padding: 0.28vw 0px;
 
   border: 1px solid rgba(255, 255, 255, 0);
 
@@ -1181,11 +1149,11 @@ h2 {
 
 
 .portfolio__content {
-  margin-top: 72px;
+  margin-top: 5vw;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 36px;
+  gap: 2.50vw;
 
   grid-auto-rows: auto;
   grid-auto-columns: auto;
@@ -1198,7 +1166,7 @@ h2 {
   display: flex;
   flex-direction: column;
 
-  gap: 16px;
+  gap: 1.11vw;
 
   max-width: 412px;
 }
@@ -1207,7 +1175,7 @@ h2 {
   display: flex;
   flex-direction: column;
 
-  gap: 16px;
+  gap: 1.11vw;
 
   grid-column-start: 1;
   grid-column-end: -1;
@@ -1228,16 +1196,7 @@ h2 {
   width: calc(100% - 204px);
 }
 
-.title {
-  height: 100%;
-  width: auto;
 
-  max-height: 64px;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
 
 .team__lead {
   padding-top: 2em;
@@ -1477,4 +1436,13 @@ h2 {
 
   align-items: center;
   justify-content: center;
+}
+
+
+
+p{
+  font-weight: 500;
+  font-size: 1.11vw;
+  line-height: 125%;
+  letter-spacing: 1.5%;
 }
