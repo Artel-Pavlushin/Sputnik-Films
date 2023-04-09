@@ -418,7 +418,6 @@ a {
 
 
 
-
 .tabs__description-container {
   width: 100%;
   max-width: 512px;
@@ -427,7 +426,8 @@ a {
   justify-content: space-between;
 }
 
-.tabs__desription-text {
+.tabs__desription-text-11
+{
   margin: 0;
   padding-left: 2.5vw;
   padding-top: 2.5vw;
@@ -468,7 +468,6 @@ a {
 
   border-radius: 2.5vw;
 }
-
 
 
 
