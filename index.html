@@ -47,13 +47,22 @@
 
         <section class="lead">
             <div class="image-container">
-                <img src="./images/lead-image.png" alt="" class="image-container__image image-container__image_project">
-                <img src="./images/lead-image.png" alt=""
-                    class="image-container__image image-container__image_blured_project">
+                <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
+                                class="video-title" playsinline muted>
+                                <!-- <source src="./videos/polemica.webm" type="video/webm"> -->
+                                <source src="./videos/tittle-video.mp4" type="video/mp4">
+
+                            </video>
+                            <video id="video-title" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0"
+                            loop="loop" playsinline muted class="video-title blured" playsinline muted>
+                            <!-- <source src="./videos/more.tv.webm" type="video/webm"> -->
+                            <source src="./videos/tittle-video.mp4" type="video/mp4">
+
+                        </video>
             </div>
             <h2 class="video-tag">
                 <div class="video-tag__point"></div>
-                <p class="video-tag__text">more.tv</p>
+                <p class="video-tag__text">Шоурил 2023</p>
             </h2>
         </section>
 
