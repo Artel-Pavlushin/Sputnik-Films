@@ -387,11 +387,11 @@ a {
   padding-left: 1vw;
   padding-top: 2.5vw;
   font-weight: 400;
-  font-size: 3.06vw;
+  font-size: 2.8vw;
   line-height: 125%;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
-  max-width: 706px;
+  max-width: 732px;
 }
 
 .tabs__lead-tags {
@@ -411,7 +411,7 @@ a {
 #tab4:checked~.nav .tab4,
 #tab5:checked~.nav .tab5,
 #tab6:checked~.nav .tab6,
-#tab7:checked~.nav .tab7 ~ .label {
+#tab7:checked~.nav .tab7~.label {
   color: rgba(255, 255, 255, 0.6);
   position: relative;
 }
@@ -426,57 +426,71 @@ a {
   justify-content: space-between;
 }
 
-.tabs__desription-text-11
-{
+.tabs__desription-text {
+
   margin: 0;
   padding-left: 2.5vw;
   padding-top: 2.5vw;
 
-  max-width: 240px;
+  max-width: 270px;
 
   align-self: start;
   justify-self: start;
 
-  font-size: 16px;
+  font-size: 1.11vw;
   line-height: 125%;
 
   color: rgba(255, 255, 255, 0.6);
 
   box-sizing: border-box;
+
 }
+
+.tabs__desription-text:not(:first-of-type) {
+  display: none;
+}
+
 
 .logos {
   margin: 0;
   padding: 0;
+
+  gap: 4px;
 
   display: flex;
   flex-direction: row-reverse;
 
   align-self: end;
   justify-self: end;
+
+
 }
 
 .logos__item {
+  margin-left: -10px;
   width: 5vw;
   height: 5vw;
 
-  opacity: 0.03;
-
-  background-color: rgba(255, 255, 255);
-  box-shadow: 0.28vw 0.28vw 0.28vw rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 0.28vw 0.28vw 0.28vw rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(1.04vw);
 
   border-radius: 2.5vw;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 
 
+.logos__item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
+.logos:hover .logos__item{
+  margin-left: 0;
 
-
-
-
-
+}
 
 
 

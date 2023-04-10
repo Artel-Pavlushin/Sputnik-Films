@@ -7,7 +7,7 @@
 }
 
 .project:hover  .video-tag__point{
-    animation: size 1s ease-in-out alternate infinite;
+    animation: size 0.8s ease-in-out alternate infinite;
  }
  
  
