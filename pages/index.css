@@ -86,7 +86,7 @@
   max-width: 1246px;
   margin: 0 auto;
   margin-top: 108px;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.3);
 
 }
 
@@ -206,7 +206,7 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   max-width: 732px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 1439px) {
@@ -224,6 +224,7 @@
 
 
 .tabs__lead-tags-text {
+  color: rgba(255, 255, 255, 0.3);
   margin: 0;
   padding: 4px 8px;
 }
@@ -272,7 +273,7 @@
   align-self: start;
   justify-self: start;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 
   box-sizing: border-box;
 }
@@ -751,6 +752,7 @@
   line-height: 125%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 1439px) {
@@ -765,6 +767,7 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  color: rgba(255, 255, 255, 0.6);
 
   text-align: center;
 }
@@ -820,7 +823,7 @@
 }
 
 #gray-text {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 #gayane-gap {
@@ -898,6 +901,7 @@
   justify-self: start;
 
   text-align: left;
+  color: rgba(255, 255, 255, 0.5);
 
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
