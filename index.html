@@ -537,7 +537,7 @@
 
             <div class="projects__section-1">
                 <div class="project">
-                    <h2 class="video-tag" >
+                    <h2 class="video-tag">
                         <div class="video-tag__point"></div>
                         <p class="video-tag__text">polemica</p>
                     </h2>
@@ -604,7 +604,7 @@
             <div class="projects__section-3" id="gayane-gap">
 
                 <div class="projects__vertical-descriprion-2">
-                    <div class="logos__item"></div>
+                    <div class="logos__item" id="logo-item-desc"><img src="./images/logos/yandex.svg" alt=""></div>
                     <div class="projects__factoid left">
                         <p class="projects__factoid-text">
                             Ролик для повышения уровня лояльности пользователей Яндекс.GO и проведения HR-компании.
@@ -616,7 +616,7 @@
 
                 <div class="project">
                     <h2 class="video-tag">
-                        <div class="video-tag__point" ></div>
+                        <div class="video-tag__point"></div>
                         <p class="video-tag__text">yandex/gayane</p>
                     </h2>
                     <div class="image-container" id="video-container">
@@ -634,9 +634,10 @@
 
                         </video>
                     </div>
-                    <div class="project__description">
+                    <div class="project__description" id="gayane-desc">
                         <p class="project__text">Съёмки проходили<br>в 2-х городах.</p>
                         <p class="project__text">1 месяц ушёл <br> на производство.</p>
+                        <p class="project__text" id="gray-text">Реклама <br> #branded #content</p>
                     </div>
                 </div>
 
@@ -644,9 +645,9 @@
 
             <div class="quote">
                 <img src="./images/figure1.svg" alt="" class="quote__figure">
-                <p>(контроль)</p>
+                <p id="gray-text">(контроль)</p>
                 <p class="quote__text">
-                    гарантируем удобный сервиси постоянную коммуникацию, Утверждаем каждый этап проекта, Ведём
+                    гарантируем удобный сервис <br> и постоянную коммуникацию, <br> Утверждаем каждый этап проекта, <br> Ведём
                     ежедневные отчёты.
                 </p>
                 <div class="quote__author">
@@ -657,13 +658,13 @@
                     </div>
                     <div class="qoute__description">
                         <p>Сергей Клейн</p>
-                        <p>Исполнительный продюсер</p>
+                        <p id="gray-text">Исполнительный продюсер</p>
                     </div>
                 </div>
                 <img src="./images/figure2.svg" alt="" class="quote__figure">
             </div>
 
-            <div class="projects__section-3">
+            <div class="projects__section-3" id="gayane-gap">
 
                 <div class="projects__vertical-descriprion-2">
                     <div class="projects__factoid left">
@@ -677,12 +678,12 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" id="last-gap">
                     <h2 class="video-tag">
                         <div class="video-tag__point"></div>
                         <p class="video-tag__text">там, где наш дом</p>
                     </h2>
-                    <div class="image-container">
+                    <div class="image-container" id="video-container">
                         <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
                             class="video-dom" playsinline muted>
                             <source src="./videos/dom.webm " type="video/webm">
@@ -697,10 +698,14 @@
 
                         </video>
                     </div>
-                    <div class="project__description">
+                    <div class="project__description" id="gayane-desc">
                         <p class="project__text">Дебютный <br> документальный проект, <br> ставший победителем
                             международных <br> фестивалей.</p>
-                        <p class="project__text">Кинотеатральный прокат в 54 городах СНГ.</p>
+                        <p class="project__text">Кинотеатральный прокат <br> в 54 городах СНГ.</p>
+                        <div class="project__tags">
+                            <p class="project__text">Документальное кино</p>
+                            <p class="project__text">#альманах #кино</p>
+                        </div>
                     </div>
                 </div>
 
@@ -712,7 +717,7 @@
                         <div class="video-tag__point"></div>
                         <p class="video-tag__text">Ctrl + A / add</p>
                     </h2>
-                    <div class="image-container">
+                    <div class="image-container" id="video-container">
                         <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
                             class="video-ctrla" playsinline muted>
                             <source src="./videos/Ctrl+A-add.webm" type="video/webm">
@@ -740,7 +745,7 @@
                         <div class="video-tag__point"></div>
                         <p class="video-tag__text">шоурил cg</p>
                     </h2>
-                    <div class="image-container">
+                    <div class="image-container" id="video-container">
                         <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
                             class="video-cg" playsinline muted>
                             <source src="./videos/шоурил-cg.webm" type="video/webm">
@@ -775,11 +780,12 @@
             <h2 class="footer__form-header">обсудить проект</h2>
             <a href="#" class="contact contact_footer">
                 <p class="contact__bracket contact__text">[</p>
-                <p class="contact__text">hello@sputnikfilms.ru</p>
+                <p class="contact__text" id="text-display" onmouseover="changeText('скопировать')"
+                    onmouseout="changeback('hello@sputnikfilms.ru')">hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
             </a>
-            <a class="anchor-button">
-                <p class="anchor-button__text">→</p>
+            <a class="anchor-button" src="#">
+                <p class="anchor-button__text" id="header-arrow">→</p>
                 <p class="anchor-button__text">Обсудить проект</p>
             </a>
         </div>

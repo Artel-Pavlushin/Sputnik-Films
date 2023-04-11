@@ -15,7 +15,7 @@
 
 
 @media screen and (max-width: 1439px) {
-    .contact {
+    .title  {
         margin-top: 4.44vw;
         max-width: 86.39vw;
         width: calc(100wv - 13.61vw);
