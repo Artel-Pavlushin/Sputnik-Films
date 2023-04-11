@@ -911,7 +911,12 @@
   margin-top: 5.14vw;
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr;
-  gap: 2.50vw;
+  gap: 36px;
+}
+@media screen and (max-width: 1439px) {
+  .footer__body {
+    gap: 2.50vw;
+  }
 }
 
 ul {
@@ -922,7 +927,8 @@ ul {
 
 .footer__form {
   margin: 0;
-  padding: 1.53vw 1.53vw 2.22vw;
+  padding: 24px 24px 32px;
+  
 
   max-width: 396px;
 
@@ -937,6 +943,12 @@ ul {
 
   box-sizing: border-box;
 }
+@media screen and (max-width: 1439px) {
+  .footer__form {
+    padding: 1.53vw 1.53vw 2.22vw;
+  }
+}
+
 
 * {
   outline: none;
@@ -948,13 +960,13 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 2.5vw 0px 0.83vw;
+  padding: 36px 0px 0.83vw;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.39vw;
+  line-height: 115%;
 
   letter-spacing: 0.015em;
   text-transform: uppercase;
@@ -965,6 +977,13 @@ ul {
 
   background: none;
 }
+@media screen and (max-width: 1439px) {
+  .footer__form-input {
+    padding: 2.5vw 0px 0.83vw;
+    line-height: 1.39vw;
+  }
+}
+
 
 input::placeholder {
   color: rgba(255, 255, 255, 0.1);
@@ -977,12 +996,16 @@ input:focus::placeholder {
 
 
 .footer__form-buttons {
-  font-size: 1.11vw;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.2);
   display: grid;
   grid-template-columns: repeat(7 1fr);
 }
-
+@media screen and (max-width: 1439px) {
+  .footer__form-buttons{
+    font-size: 1.11vw;
+  }
+}
 
 .footer__form-buttons>input[type="radio"] {
   display: none;
@@ -1003,15 +1026,23 @@ input:focus::placeholder {
 
   justify-content: center;
   align-items: center;
-  padding: 0.42vw 0.83vw;
+  padding: 6px 12px;
 
   text-align: center;
-  font-size: 1.11vw;
+  font-size: 16px;
   line-height: 1.25;
 
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   cursor: pointer;
 }
+@media screen and (max-width: 1439px) {
+  .footer__form-buttons>label{
+    font-size: 1.11vw;
+    padding: 0.42vw 0.83vw;
+  }
+}
+
+
 
 .footer__form-buttons>input[type="radio"]:checked+label {
   color: #1C1C1C;
@@ -1030,6 +1061,8 @@ input:focus::placeholder {
   color: rgba(255, 255, 255, 0.1);
 
   border: none;
+
+  font-weight: 400;
 }
 
 
