@@ -117,14 +117,49 @@ function changeItem12() {
   }
 
 
+  function changeItem44() {
+    document.getElementById('LL41').style.display = 'none';
+    document.getElementById('LL44').style.display = 'block';
+  }
+  
+  function rechangeItem44() {
+    document.getElementById('LL41').style.display = 'block';
+    document.getElementById('LL44').style.display = 'none';
+  }
+
+
+
+
+  function changeItem42() {
+    document.getElementById('LL41').style.display = 'none';
+    document.getElementById('LL42').style.display = 'block';
+  }
+  
+  function rechangeItem42() {
+    document.getElementById('LL41').style.display = 'block';
+    document.getElementById('LL42').style.display = 'none';
+  }
+
+
+  function changeItem43() {
+    document.getElementById('LL41').style.display = 'none';
+    document.getElementById('LL43').style.display = 'block';
+  }
+  
+  function rechangeItem43() {
+    document.getElementById('LL41').style.display = 'block';
+    document.getElementById('LL43').style.display = 'none';
+  }
+
+
   function changeItem34() {
-    document.getElementById('LL31').style.display = 'none';
-    document.getElementById('LL34').style.display = 'block';
+    document.getElementById('LL41').style.display = 'none';
+    document.getElementById('LL44').style.display = 'block';
   }
   
   function rechangeItem34() {
-    document.getElementById('LL31').style.display = 'block';
-    document.getElementById('LL34').style.display = 'none';
+    document.getElementById('LL41').style.display = 'block';
+    document.getElementById('LL44').style.display = 'none';
   }
 
 

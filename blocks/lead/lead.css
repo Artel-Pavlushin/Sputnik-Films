@@ -1,10 +1,18 @@
 .lead{
     margin: 0 auto;
     padding: 0;
-    margin-top: 4.44vw;
+    margin-top: 64px;
     display: grid;
-    width: calc(100vw - 206px);
     grid-template-columns: repeat(1 1fr);
 
     max-width: 1244px;
+}
+
+
+@media screen and (max-width: 1439px) {
+    .contact {
+        margin-top: 4.44vw;
+        max-width: 16.11vw;
+        width: calc(100wv - 13.61vw);
+    }
 }

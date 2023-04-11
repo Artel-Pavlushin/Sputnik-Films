@@ -14,8 +14,35 @@
     transition: 0.3s ease-in-out;
 
     text-decoration: none;
+
+    cursor: pointer;
+
+    transition: .3s all;
 }
 
 .anchor-button:hover{
-    gap: 6px;
+    color: rgba(255, 255, 255, 0.4);
 }
+
+.anchor-button:active{
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#header-arrow{
+    transition: .3s all;
+}
+
+.anchor-button:hover #header-arrow{
+    -webkit-transform: rotate(90deg);  /* to support Safari and Android browser */
+    -ms-transform: rotate(90deg);      /* to support IE 9 */
+    transform: rotate(90deg);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+.anchor-button:active #header-arrow{
+    color: rgba(255, 255, 255, 0.2);
+}
+
+
+

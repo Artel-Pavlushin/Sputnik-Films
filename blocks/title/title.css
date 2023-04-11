@@ -1,6 +1,6 @@
 .title {
     margin: 0 auto;
-    margin-top: 4.44vw;
+    margin-top: 64px;
     max-width: 1244px;
     box-sizing: border-box;
 
@@ -10,7 +10,14 @@
     justify-content: center;
     align-items: baseline;
 
-    height: 100%;
-    width: calc(100% - 196px);
-  
+    height: 100%;  
+}
+
+
+@media screen and (max-width: 1439px) {
+    .contact {
+        margin-top: 4.44vw;
+        max-width: 86.39vw;
+        width: calc(100wv - 13.61vw);
+    }
 }

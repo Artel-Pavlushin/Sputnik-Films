@@ -14,12 +14,13 @@
         <header class="header">
             <a href="#" class="contact">
                 <p class="contact__bracket contact__text">[</p>
-                <p class="contact__text">hello@sputnikfilms.ru</p>
+                <p class="contact__text" id="text-display" onmouseover="changeText('скопировать')"
+                    onmouseout="changeback('hello@sputnikfilms.ru')">hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
             </a>
             <img src="./images/__logo.png" alt="логотип" class="header__logo">
-            <a class="anchor-button">
-                <p class="anchor-button__text">→</p>
+            <a class="anchor-button" src="#">
+                <p class="anchor-button__text" id="header-arrow">→</p>
                 <p class="anchor-button__text">Обсудить проект</p>
             </a>
 
@@ -48,17 +49,17 @@
         <section class="lead">
             <div class="image-container">
                 <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
-                                class="video-title" playsinline muted>
-                                <!-- <source src="./videos/polemica.webm" type="video/webm"> -->
-                                <source src="./videos/tittle-video.mp4" type="video/mp4">
+                    class="video-title" playsinline muted>
+                    <!-- <source src="./videos/polemica.webm" type="video/webm"> -->
+                    <source src="./videos/tittle-video.mp4" type="video/mp4">
 
-                            </video>
-                            <video id="video-title" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0"
-                            loop="loop" playsinline muted class="video-title blured" playsinline muted>
-                            <!-- <source src="./videos/more.tv.webm" type="video/webm"> -->
-                            <source src="./videos/tittle-video.mp4" type="video/mp4">
+                </video>
+                <video id="video-title" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0"
+                    loop="loop" playsinline muted class="video-title blured" playsinline muted>
+                    <!-- <source src="./videos/more.tv.webm" type="video/webm"> -->
+                    <source src="./videos/tittle-video.mp4" type="video/mp4">
 
-                        </video>
+                </video>
             </div>
             <h2 class="video-tag">
                 <div class="video-tag__point"></div>
@@ -109,7 +110,8 @@
                     <article class="tab1">
                         <div class="tabs__content-container">
                             <div class="tabs__lead-block">
-                                <p class="tabs__lead-text">Создадим видеоролип для целей ваших рекламныхи маркетинговых
+                                <p class="tabs__lead-text">Создадим видеоролик <br> для целей ваших рекламных <br> и
+                                    маркетинговых
                                     кампаний,
                                     Сами
                                     разработаем креатив.</p>
@@ -125,7 +127,7 @@
                                 <div>
                                     <p id="LL1" class="tabs__desription-text">
                                         Работаем с бизнесом напрямую и сотрудничаем с агентствами. Закрываем весь цикл
-                                        производства
+                                        производства <br>
                                         и сопутствующие задачи.
                                     </p>
 
@@ -159,17 +161,17 @@
 
                                 <div class="logos">
                                     <div onmouseover="changeItem12()" onmouseout="rechangeItem12()" id="L1"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem13()" onmouseout="rechangeItem13()" id="L2"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem14()" onmouseout="rechangeItem14()" id="L3"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem15()" onmouseout="rechangeItem15()" id="L4"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem16()" onmouseout="rechangeItem16()" id="L5"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem17()" onmouseout="rechangeItem17()" id="L6"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                 </div>
 
                             </div>
@@ -179,7 +181,7 @@
                     <article class="tab2">
                         <div class="tabs__content-container">
                             <div class="tabs__lead-block">
-                                <p class="tabs__lead-text">Рассказываем настоящие истории о людях, брендах и
+                                <p class="tabs__lead-text">Рассказываем настоящие истории о людях, брендах <br> и
                                     событиях.&nbsp;
                                     Документалистика — язык новой искренности. И мы умеем на нем говорить.</p>
                                 <div class="tabs__lead-tags">
@@ -210,9 +212,9 @@
 
                                 <div class="logos">
                                     <div onmouseover="changeItem22()" onmouseout="rechangeItem22()" id="L21"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/alfa.svg" alt=""></div>
                                     <div onmouseover="changeItem23()" onmouseout="rechangeItem23()" id="L22"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
 
                                 </div>
                             </div>
@@ -259,11 +261,11 @@
 
                                 <div class="logos">
                                     <div onmouseover="changeItem32()" onmouseout="rechangeItem32()" id="L31"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem33()" onmouseout="rechangeItem33()" id="L32"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem34()" onmouseout="rechangeItem34()" id="LL33"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
 
                                 </div>
                             </div>
@@ -275,7 +277,8 @@
                         <div class="tabs__content-container">
                             <div class="tabs__lead-block">
                                 <p class="tabs__lead-text">Летаем на спортивных дронах со сложным управлением с помощью
-                                    VR-очков.  Делаем Full-FPV ролики и внедряем в другие проекты. </p>
+                                    <br>VR-очков. Делаем Full-FPV ролики и внедряем в другие проекты.
+                                </p>
                                 <div class="tabs__lead-tags">
                                     <p class="tabs__lead-tags-text">#аэросъемка</p>
                                     <p class="tabs__lead-tags-text">#экстрим</p>
@@ -308,11 +311,11 @@
 
                                 <div class="logos">
                                     <div onmouseover="changeItem42()" onmouseout="rechangeItem42()" id="L41"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem43()" onmouseout="rechangeItem43()" id="L42"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem44()" onmouseout="rechangeItem44()" id="L42"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
 
                                 </div>
                             </div>
@@ -360,13 +363,13 @@
 
                                 <div class="logos">
                                     <div onmouseover="changeItem52()" onmouseout="rechangeItem52()" id="L51"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem53()" onmouseout="rechangeItem53()" id="L52"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem54()" onmouseout="rechangeItem54()" id="L53"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem55()" onmouseout="rechangeItem55()" id="L54"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
 
                                 </div>
                             </div>
@@ -378,7 +381,7 @@
                         <div class="tabs__content-container">
                             <div class="tabs__lead-block">
                                 <p class="tabs__lead-text">Работаем с 3D-графикой, анимацией и VFX. Закрываем задачи по
-                                    монтажу, цветокоррекции и саунд-дизайну. </p>
+                                    монтажу, цветокоррекции <br> и саунд-дизайну. </p>
                                 <div class="tabs__lead-tags">
                                     <p class="tabs__lead-tags-text">#CG</p>
                                     <p class="tabs__lead-tags-text">#3D</p>
@@ -419,15 +422,15 @@
 
                                 <div class="logos">
                                     <div onmouseover="changeItem62()" onmouseout="rechangeItem62()" id="L61"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem63()" onmouseout="rechangeItem63()" id="L62"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem64()" onmouseout="rechangeItem64()" id="L63"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem65()" onmouseout="rechangeItem65()" id="L64"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
                                     <div onmouseover="changeItem66()" onmouseout="rechangeItem66()" id="L65"
-                                        class="logos__item"></div>
+                                        class="logos__item"><img src="./images/logos/vk.svg" alt=""></div>
 
                                 </div>
                             </div>
@@ -438,8 +441,9 @@
                     <article class="tab7">
                         <div class="tabs__content-container">
                             <div class="tabs__lead-block">
-                                <p class="tabs__lead-text">Сотрудничаем с лейблами и независимыми артистами. Сочетаем
-                                    сторителлинг с артом и образностью. </p>
+                                <p class="tabs__lead-text">Сотрудничаем с лейблами <br> и независимыми артистами.
+                                    Сочетаем
+                                    сторителлинг <br> с артом и образностью. </p>
                                 <div class="tabs__lead-tags">
                                     <p class="tabs__lead-tags-text">#cниппеты</p>
                                     <p class="tabs__lead-tags-text">#лайвы</p>
@@ -451,7 +455,7 @@
                                     Работаем комплексно: создаем клипы, обложки, бэкстейдж.
                                 </p>
                                 <div class="logos">
-                                    
+
                                 </div>
                             </div>
 
@@ -473,31 +477,29 @@
                 <div class="project">
                     <h2 class="video-tag">
                         <div class="video-tag__point"></div>
-                        <p class="video-tag__text">more.tv</p>
+                        <p class="video-tag__text">More.tv</p>
                     </h2>
-                    <div class="image-container">
-
-                        <video id="video-more" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0"
-                            loop="loop" playsinline muted class="video-more">
+                    <div class="image-container" id="video-container">
+                        <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
+                            class="video-more" playsinline muted>
                             <source src="./videos/more.tv.webm" type="video/webm">
                             <source src="./videos/more.tv.mp4" type="video/mp4">
 
                         </video>
 
-                        <video id="video-more" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0"
-                            loop="loop" playsinline muted class="video-more blured" playsinline muted>
+                        <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
+                            class="video-more blured" playsinline muted>
                             <source src="./videos/more.tv.webm" type="video/webm">
                             <source src="./videos/more.tv.mp4" type="video/mp4">
 
                         </video>
-
                     </div>
                     <div class="project__description">
                         <p class="project__text">Ролик для промо-компании к выходу сериала "Регби" на онлайн-платформе.
                         </p>
                         <div class="project__tags">
                             <p class="project__text">Реклама</p>
-                            <p class="project__text">#olv #digital</p>
+                            <p class="project__text">#tv #olv</p>
                         </div>
                     </div>
                 </div>
@@ -507,55 +509,57 @@
                         <div class="video-tag__point"></div>
                         <p class="video-tag__text">Улыбка</p>
                     </h2>
-                    <div class="image-container">
+                    <div class="image-container" id="video-container">
                         <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
-                            class="video-more" playsinline muted>
-                            <source src="./videos/Улыбка.webm" type="video/webm">
-                            <source src="./videos/Улыбка.mp4" type="video/mp4">
+                            class="video-ulibka" playsinline muted>
+                            <source src="./videos/ulibka.webm" type="video/webm">
+                            <source src="./videos/ulibka.mp4" type="video/mp4">
 
                         </video>
 
                         <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
-                            class="video-more blured" playsinline muted>
-                            <source src="./videos/Улыбка.webm" type="video/webm">
-                            <source src="./videos/Улыбка.mp4" type="video/mp4">
+                            class="video-ulibka blured" playsinline muted>
+                            <source src="./videos/ulibka.webm" type="video/webm">
+                            <source src="./videos/ulibka.mp4" type="video/mp4">
 
                         </video>
                     </div>
                     <div class="project__description">
-                        <p class="project__text">Серия из трёх роликов для проведения рекламной кампании.</p>
+                        <p class="project__text">Серия из трёх роликовдля проведения рекламной кампании.
+                        </p>
+                        <div class="project__tags">
+                            <p class="project__text"> </p>
+                            <p class="project__text"> </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="projects__section-1">
                 <div class="project">
-                    <h2 class="video-tag">
+                    <h2 class="video-tag" >
                         <div class="video-tag__point"></div>
                         <p class="video-tag__text">polemica</p>
                     </h2>
-                    <div class="image-container">
+                    <div class="image-container" id="video-container">
                         <div class="image-container">
                             <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
-                                class="video-more" playsinline muted>
+                                class="video-polemica " playsinline muted>
                                 <source src="./videos/polemica.webm" type="video/webm">
                                 <source src="./videos/polemica.mp4" type="video/mp4">
 
                             </video>
 
                             <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
-                                class="video-more blured" playsinline muted>
+                                class="video-polemica  blured" playsinline muted>
                                 <source src="./videos/polemica.webm" type="video/webm">
                                 <source src="./videos/polemica.mp4" type="video/mp4">
 
                             </video>
                         </div>
-                        <div class="project__description" playsinline muted>
-                            <p class="project__text">Серия из трёх роликов для проведения рекламной кампании.</p>
-                        </div>
                     </div>
-                    <div class="project__description" playsinline muted>
-                        <p class="project__text">Помогли запустить широкую промо-компанию с помощью видео.</p>
+                    <div class="project__description" id="polemica-desc">
+                        <p class="project__text">Помогли запустить широкую промо-компанию <br> с помощью видео.</p>
                         <div class="project__tags">
                             <p class="project__text">Реклама</p>
                             <p class="project__text">#olv #digital</p>
@@ -577,7 +581,7 @@
 
             <div class="quote">
                 <img src="./images/figure1.svg" alt="" class="quote__figure">
-                <p>(процесс)</p>
+                <p id="gray-text">(процесс)</p>
                 <p class="quote__text">
                     Выстраиваем прозрачный и понятный процесс работы. Придумываем креатив и&nbsp;защищаем идеи,
                     обосновываем
@@ -591,13 +595,13 @@
                     </div>
                     <div class="qoute__description">
                         <p>Дмитрий Квашнин</p>
-                        <p>Режиссер • Cценарист • Продюсер</p>
+                        <p id="gray-text">Режиссер • Cценарист • Продюсер</p>
                     </div>
                 </div>
                 <img src="./images/figure2.svg" alt="" class="quote__figure">
             </div>
 
-            <div class="projects__section-3">
+            <div class="projects__section-3" id="gayane-gap">
 
                 <div class="projects__vertical-descriprion-2">
                     <div class="logos__item"></div>
@@ -612,10 +616,10 @@
 
                 <div class="project">
                     <h2 class="video-tag">
-                        <div class="video-tag__point"></div>
+                        <div class="video-tag__point" ></div>
                         <p class="video-tag__text">yandex/gayane</p>
                     </h2>
-                    <div class="image-container">
+                    <div class="image-container" id="video-container">
                         <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0" loop="loop"
                             class="video-gayane" playsinline muted>
                             <source src="./videos/gayane.webm" type="video/webm">
@@ -866,7 +870,8 @@
         </div>
 
     </footer>
-    <script src="./script.js"></script>
+    <script src="./tab-script.js"></script>
+    <script src="./contact.js"></script>
 </body>
 
 </html>

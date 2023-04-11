@@ -1,11 +1,18 @@
 .navigation {
     margin: 0 auto;
     padding: 0;
-    width: calc(100% - 206px);
-    margin-top: 4.44vw;
+    margin-top: 64px;
     display: flex;
 
-    max-width: 1244px;
+    max-width: 1246px;
 
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+@media screen and (max-width: 1439px) {
+    .navigation {
+        margin-top: 4.44vw;
+        width: calc(100wv - 13.61vw);
+    }
 }

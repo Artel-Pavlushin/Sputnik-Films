@@ -1,9 +1,7 @@
 .header {
     margin: 0 auto;
     padding-top: 36px;
-    max-width: 1244px;
-    width: calc(100% - 206px);
-
+    max-width: 1246px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
@@ -11,4 +9,13 @@
     place-items: end;
 
     z-index: 2;
+}
+
+
+@media screen and (max-width: 1439px) {
+    .header {
+        padding-top: 2.5vw;
+        max-width: 86.53vw;
+        width: calc(100wv - 13.61vw);
+    }
 }

@@ -1,9 +1,9 @@
 .video-tag__point{
-    width: 0.69vw;
-    height: 0.69vw;
+    width: 10px;
+    height: 10px;
     background-color: #E30613;
     border-radius: 50%;
-    filter: blur(5px);
+    filter: blur(2.5px);
 }
 
 .project:hover  .video-tag__point{
@@ -20,3 +20,13 @@
          transform: scale(40%);
      }
  }
+
+
+ @media screen and (max-width: 1439px) {
+    .contact {
+        width: 0.69vw;
+        height: 0.69vw;
+    }
+}
+
+

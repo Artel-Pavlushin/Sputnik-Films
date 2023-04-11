@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 
+    width: 232px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,4 +15,21 @@
     color: rgba(255, 255, 255, 0.6);
     
     justify-self: start;
+    
+}
+
+
+.contact:hover{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.contact:active{
+    color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 1439px) {
+    .contact {
+        gap: 0.14vw;
+        width: 16.11vw;
+    }
 }
