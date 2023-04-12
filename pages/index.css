@@ -85,7 +85,7 @@
   font-size: 0;
   max-width: 1246px;
   margin: 0 auto;
-  margin-top: 108px;
+  margin-top: 106px;
   color: rgba(255, 255, 255, 0.3);
 
 }
@@ -419,6 +419,7 @@
 
 #gayane-desc {
   grid-template-columns: 28.5% 28.5% 43%;
+  width: 90%;
 }
 
 
@@ -625,7 +626,6 @@
 
 .projects__vertical-descriprion-2 {
   padding-left: 2.50vw;
-
   max-width: 348px;
   display: flex;
   flex-direction: column;
@@ -639,6 +639,11 @@
   background-position: left;
 
 }
+
+#tam-gde{
+  background-image: url(../images/left-figure-2.svg);
+}
+
 
 #logo-item-desc {
   margin: 0;
@@ -659,7 +664,14 @@
   align-items: start;
   align-content: start;
   justify-items: start;
+  padding-top: 36px;
 }
+@media screen and (max-width: 1439px) {
+  .left  {
+    padding-top: 2.5vw;
+  }
+}
+
 
 .right {
   text-align: right;
@@ -667,6 +679,7 @@
   align-content: end;
   justify-items: end;
 }
+
 
 .projects__factoid {
 
@@ -716,7 +729,7 @@
 
 .quote {
   margin: 0;
-  margin-top: 180px;
+  margin-top: 178px;
   padding: 0;
   width: 100%;
 
@@ -875,6 +888,10 @@
   .footer {
     margin-top: 12.50vw;
   }
+}
+
+#last-project-gap{
+  margin-top: 180px;
 }
 
 
