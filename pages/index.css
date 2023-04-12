@@ -273,7 +273,7 @@
   align-self: start;
   justify-self: start;
 
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 
   box-sizing: border-box;
 }
@@ -425,10 +425,11 @@
 .project__text {
   margin: 0;
   padding: 0;
+
 }
 
 .project__tags {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Видео теги*/
@@ -794,6 +795,17 @@
   .quote__portraint {
     width: 5vw;
     height: 5vw;
+  }
+}
+
+.qoute__description{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media screen and (max-width: 1439px) {
+  .qoute__description {
+    gap: 0.28vw;
   }
 }
 
