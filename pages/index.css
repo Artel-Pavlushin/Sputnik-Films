@@ -697,7 +697,7 @@
 
 
 .projects__factoid {
-
+  margin: 0;
   display: flex;
   flex-direction: column;
   -ms-flex-direction: column;
@@ -718,7 +718,7 @@
 }
 
 
-.projects__factoid-number {
+/* .projects__factoid-number {
   font-family: 'Polonium';
   font-weight: 700;
   font-size: 58px;
@@ -735,7 +735,7 @@
   .projects__factoid {
     font-size: 4.03vw;
   }
-}
+} */
 
 
 .projects__factoid-text {
@@ -758,7 +758,7 @@
 }
 
 @media screen and (max-width: 1439px) {
-  .projects__factoid {
+  .quote {
     margin-top: 12.50vw;
     gap: 2.50vw;
   }
