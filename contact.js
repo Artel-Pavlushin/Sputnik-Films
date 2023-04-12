@@ -2,12 +2,12 @@
 
 
 
-function changeText(text) {
+function changeText1(text) {
     var display = document.getElementById('text-display');
     display.innerHTML = "";
     display.innerHTML = text;
 }
-function changeback(text) {
+function changeback1(text) {
     var display = document.getElementById('text-display');
     display.innerHTML = "";
     display.innerHTML = text;
