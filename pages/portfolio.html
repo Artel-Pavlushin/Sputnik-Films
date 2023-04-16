@@ -619,19 +619,21 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" name="footer">
 
         <div class="footer__head">
             <h2 class="footer__form-header">обсудить проект</h2>
-            <a href="#" class="contact contact_footer">
+            <a href="" class="contact contact_footer">
                 <p class="contact__bracket contact__text">[</p>
-                <p class="contact__text">hello@sputnikfilms.ru</p>
+                <p class="contact__text" id="text-display1" onmouseover="changeText('скопировать')"
+                    onmouseout="changeback('hello@sputnikfilms.ru')">hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
             </a>
-            <a class="anchor-button">
-                <p class="anchor-button__text">→</p>
-                <p class="anchor-button__text">Обсудить проект</p>
-            </a>
+            <div class="footer__anchor-container">
+                <a class="anchor-button" href="https://t.me/cosmovisioner" target="_blank" id="footer-anchor">
+                    <p class="anchor-button__text">Телеграмм</p>
+                </a>
+            </div>
         </div>
 
         <div class="footer__body">
@@ -658,15 +660,13 @@
                     <h3 class="footer__buttons-header">Бюджет</h3>
                     <div class="footer__form-buttons">
                         <input type="radio" name="tab-btn" id="form-button-1" value="" checked>
-                        <label for="form-button-1">
-                            <1 млн</label>
-
-                                <input type="radio" name="tab-btn" id="form-button-2" value="" checked>
-                                <label for="form-button-2">1-3&thinsp;млн</label>
-                                <input type="radio" name="tab-btn" id="form-button-3" value="" checked>
-                                <label for="form-button-3">3-5&thinsp;млн</label>
-                                <input type="radio" name="tab-btn" id="form-button-4" value="" checked>
-                                <label for="form-button-4">>5&thinsp;млн</label>
+                        <label for="form-button-1">1 млн </label>
+                        <input type="radio" name="tab-btn" id="form-button-2" value="">
+                        <label for="form-button-2">1-3&thinsp;млн</label>
+                        <input type="radio" name="tab-btn" id="form-button-3" value="">
+                        <label for="form-button-3">3-5&thinsp;млн</label>
+                        <input type="radio" name="tab-btn" id="form-button-4" value="">
+                        <label for="form-button-4">>5&thinsp;млн</label>
                     </div>
                 </div>
             </fieldset>
@@ -680,7 +680,7 @@
                             class="quote__portraint-photo quote__portraint-photo_blured">
                     </div>
                     <p>Дмитрий Квашнин <br> <br> Ответит на ваши вопросы и организует встречу.</p>
-                    <a href="#" class="footer__author-link">Телеграмм</a>
+                    <a href="https://t.me/cosmovisioner" class="footer__author-link" target="_blank">Телеграмм</a>
                 </div>
 
                 <div class="footer__author">
@@ -691,13 +691,14 @@
                     </div>
                     <p>Сергей Клейн <br> <br>
                         Поможет разобраться <br> в вашей задаче <br> и предложит решение.</p>
-                    <a href="#" class="footer__author-link">Телеграмм</a>
+                    <a href="https://t.me/klein_sergey" class="footer__author-link" target="_blank">Телеграмм</a>
                 </div>
 
             </div>
 
             <div class="footer__policy">
-                <a href="" class="footer__policy-link">Политика обработки персональных <br> данных</a>
+                <a href="https://ppt.ru/fls/127288/obrazets-politiki-konfidentsialnosti-personalnykh-dannykh-dlya-saytov-2023-02.pdf"
+                    class="footer__policy-link" target="_blank">Политика обработки персональных <br> данных</a>
             </div>
 
         </div>
@@ -710,8 +711,11 @@
             </div>
             <div></div>
             <div class="logos">
-                <div class="logos__item"></div>
-                <div class="logos__item"></div>
+                <a class="logos__item" href="https://vk.com/sputnikfilms" target="_blank"><img
+                        src="../images/logos/vk.svg" alt=""></a>
+                <a class="logos__item" href="https://vimeo.com/sputnikfilmspro/videos" target="_blank"><img
+                        src="../images/logos/vimeo.svg" alt=""></a>
+
             </div>
         </div>
 
