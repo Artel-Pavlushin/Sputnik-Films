@@ -1693,7 +1693,6 @@ width: 100%;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 
-  padding-right: 36px;
 }
 
 .backstage__head{
@@ -1702,8 +1701,6 @@ width: 100%;
 
 
 .backstage__grid {
-
-
   display: grid;
   grid-template-columns: repeat(40, 96px);
   grid-template-rows: repeat(2, 209px);
@@ -1763,6 +1760,10 @@ width: 100%;
   justify-content: center;
 }
 
+
+.email{
+  display: none;
+}
 
 
 H2{
