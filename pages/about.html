@@ -13,10 +13,12 @@
     <main class="content">
         <header class="header">
             <textarea id="email" rows="5" cols="30">Write something here…</textarea>
-            <a href="#" class="contact">
+            <a href="#" class="contact" onclick="copyToClipboard()";>
+                <p style="display: none;" id="text-to-copy">hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">[</p>
-                <p class="contact__text" id="text-display"  onmouseover="changeText1('скопировать')" onclick="changeText2('скопированно')"
-                    onmouseout="changeback1('hello@sputnikfilms.ru')">hello@sputnikfilms.ru</p>
+                <p class="contact__text" id="text-display" onmouseover="changeText1('скопировать')"
+                    onclick="changeText2('скопированно'); copyToClipboard();" onmouseout="changeback1('hello@sputnikfilms.ru')">
+                    hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
             </a>
             <img src="../images/__logo.png" alt="логотип" class="header__logo">
@@ -61,7 +63,7 @@
                             class="logos__item"><img src="../images/logos/wink.svg" alt=""></a>
                         <a href="https://okko.tv/serial/vy-iz-budushchego/season/2" target="_blank"
                             class="logos__item"><img src="../images/logos/okko.svg" alt=""></a>
-                        <a href="https://www.kinopoisk.ru/name/6582459/" target="_blank" class="logos__item"><img
+                        <a href="https://www.kinopoisk.ru/film/5232612/" target="_blank" class="logos__item"><img
                                 src="../images/logos/kinopoisk.svg" alt=""></a>
                     </div>
                     <div class="title__decoration"></div>
@@ -184,17 +186,17 @@
 
 
         <section class="nominations">
-            <div class="logos">
+            <div class="rewards">
                 <a href="https://vk.com/unknownfilmfestival?w=wall-133062901_946 " target="_blank"
-                    class="logos__item"><img src="../images/nomination01.png" alt=""></a>
-                <a href="https://vk.com/tamgdenashdom?w=wall-211402154_176 " target="_blank" class="logos__item"><img
+                    class="logos__item" id="reward"><img src="../images/nomination01.png" alt=""></a>
+                <a href="https://vk.com/tamgdenashdom?w=wall-211402154_176 " target="_blank" class="logos__item" id="reward"><img
                         src="../images/nomination02.png" alt=""></a>
                 <a href="https://moscowshorts.com/ru/programma-pokaza-filmov-pobediteley-moscow-shorts-sentyabr-2022/ "
-                    target="_blank" class="logos__item"><img src="../images/nomination03.png" alt=""></a>
-                <a href="https://shortshotfest.com/" target="_blank" class="logos__item"><img
+                    target="_blank" class="logos__item" id="reward"><img src="../images/nomination03.png" alt=""></a>
+                <a href="https://shortshotfest.com/" target="_blank" class="logos__item" id="reward"><img
                         src="../images/nomination04.png" alt=""></a>
                 <a href="https://lampa.film/fest/perm2022/schedule/festivalnyy-pokaz-tam-gde-nash-dom/" target="_blank"
-                    class="logos__item"><img src="../images/nomination05.png" alt=""></a>
+                    class="logos__item" id="reward"><img src="../images/nomination05.png" alt=""></a>
             </div>
         </section>
 
@@ -234,7 +236,7 @@
                 </a>
                 <div class="footer__anchor-container">
                     <a class="anchor-button" href="https://t.me/cosmovisioner" target="_blank" id="footer-anchor">
-                        <p class="anchor-button__text">Телеграмм</p>
+                        <p class="anchor-button__text">Телеграм</p>
                     </a>
                 </div>
             </div>

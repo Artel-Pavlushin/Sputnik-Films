@@ -1,11 +1,12 @@
-document.getElementById("contact").onclick = function() {
-    var text = document.getElementById("email").value;
- 
-    navigator.clipboard.writeText(text)
-    .then(() => {
-        console.log('Text copied to clipboard');
-    })
-    .catch(err => {
-        console.error('Error in copying text: ', err);
-    });
+function copyToClipboard() {
+    const str = document.getElementById('text-to-copy').innerText;
+    const el = document.createElement('textarea');
+    el.value = str;
+    el.setAttribute('readonly', '');
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
 }

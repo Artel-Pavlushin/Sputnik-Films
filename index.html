@@ -12,10 +12,11 @@
     <div class="header-background"></div>
     <main class="content">
         <header class="header">
-            <a href="#" class="contact">
+            <a href="#" class="contact" onclick="copyToClipboard()";>
+                <p style="display: none;" id="text-to-copy">hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">[</p>
                 <p class="contact__text" id="text-display" onmouseover="changeText1('скопировать')"
-                    onclick="changeText2('скопированно')" onmouseout="changeback1('hello@sputnikfilms.ru')">
+                    onclick="changeText2('скопированно'); copyToClipboard();" onmouseout="changeback1('hello@sputnikfilms.ru')">
                     hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
             </a>
@@ -273,8 +274,8 @@
                     <article class="tab4">
                         <div class="tabs__content-container">
                             <div class="tabs__lead-block">
-                                <p class="tabs__lead-text">Летаем на спортивных дронах со сложным управлением с помощью
-                                    <br>VR-очков. Делаем Full-FPV ролики и внедряем в другие проекты.
+                                <p class="tabs__lead-text">Летаем на спортивных дронах с помощью VR-очков, делаем
+                                    Full-fpv ролики <br> и внедряем в проекты.
                                 </p>
                                 <div class="tabs__lead-tags">
                                     <p class="tabs__lead-tags-text">#аэросъемка</p>
@@ -330,6 +331,7 @@
                                     <p class="tabs__lead-tags-text">#веб-сериалы</p>
                                     <p class="tabs__lead-tags-text">#альманахи</p>
                                     <p class="tabs__lead-tags-text">#шоу</p>
+                                    <p class="tabs__lead-tags-text">#brandedcontent</p>
                                 </div>
                             </div>
                             <div class="tabs__description-container">
@@ -592,7 +594,7 @@
                     </div>
                     <div class="qoute__description">
                         <p>Дмитрий Квашнин</p>
-                        <p id="gray-text">Режиссер • Cценарист • Продюсер</p>
+                        <p id="gray-text">Основатель студии</p>
                     </div>
                 </div>
                 <img src="./images/figure2.svg" alt="" class="quote__figure">
@@ -635,7 +637,7 @@
                     <div class="project__description" id="gayane-desc">
                         <p class="project__text">Съёмки проходили<br>в 2-х городах.</p>
                         <p class="project__text">1 месяц ушёл <br> на производство.</p>
-                        <p class="project__text" id="gray-text">Реклама <br> #branded #content</p>
+                        <p class="project__text" id="gray-text">Реклама <br> #brandedcontent</p>
                     </div>
                 </div>
 
@@ -645,7 +647,7 @@
                 <img src="./images/figure1.svg" alt="" class="quote__figure">
                 <p id="gray-text">(контроль)</p>
                 <p class="quote__text">
-                    гарантируем удобный сервис <br> и постоянную коммуникацию, <br> Утверждаем каждый этап проекта, <br>
+                    гарантируем удобный сервис <br> и постоянную коммуникацию, <br> Утверждаем каждый этап, <br>
                     Ведём
                     ежедневные отчёты.
                 </p>
@@ -758,7 +760,7 @@
                         </video>
                     </div>
                     <div class="project__description" id="showreal-desc">
-                        <p class="project__text">С 5 лет развиваем направление</p>
+                        <p class="project__text">5 лет развиваем направление</p>
                         <div class="project__tags">
                             <p class="project__text">Графика&nbsp;и&nbsp;постпродакшн</p>
                             <p class="project__text">#tv #olv</p>
@@ -783,8 +785,8 @@
                 <p class="contact__bracket contact__text">]</p>
             </a>
             <div class="footer__anchor-container">
-                <a class="anchor-button" href="https://t.me/cosmovisioner" target="_blank" id="footer-anchor">
-                    <p class="anchor-button__text">Телеграмм</p>
+                <a class="anchor-button anchor-button-bottom" href="https://t.me/cosmovisioner" target="_blank" id="footer-anchor">
+                    <p class="anchor-button__text">Телеграм</p>
                 </a>
             </div>
         </div>
@@ -832,7 +834,7 @@
                         <img src="../images/Фото.png" alt=""
                             class="quote__portraint-photo quote__portraint-photo_blured">
                     </div>
-                    <p>Дмитрий Квашнин<br> <br>Ответит на вопросы<br> и организует встречу.</p>
+                    <p>Дмитрий Квашнин<br> <br>Ответит на вопросы<br> и организует встречу</p>
                     <a href="https://t.me/cosmovisioner" class="footer__author-link" target="_blank">Телеграм</a>
                 </div>
 
@@ -881,6 +883,7 @@
     </footer>
     <script src="./tab-script.js"></script>
     <script src="./contact.js"></script>
+    <script src="./email.js"></script>
 </body>
 
 </html>

@@ -12,9 +12,12 @@
     <div class="header-background"></div>
     <main class="content">
         <header class="header">
-            <a href="#" class="contact">
+            <a href="#" class="contact" onclick="copyToClipboard()";>
+                <p style="display: none;" id="text-to-copy">hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">[</p>
-                <p class="contact__text">hello@sputnikfilms.ru</p>
+                <p class="contact__text" id="text-display" onmouseover="changeText1('скопировать')"
+                    onclick="changeText2('скопированно'); copyToClipboard();" onmouseout="changeback1('hello@sputnikfilms.ru')">
+                    hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
             </a>
             <img src="../images/__logo.png" alt="логотип" class="header__logo">
@@ -631,7 +634,7 @@
             </a>
             <div class="footer__anchor-container">
                 <a class="anchor-button" href="https://t.me/cosmovisioner" target="_blank" id="footer-anchor">
-                    <p class="anchor-button__text">Телеграмм</p>
+                    <p class="anchor-button__text">Телеграм</p>
                 </a>
             </div>
         </div>
@@ -680,7 +683,7 @@
                             class="quote__portraint-photo quote__portraint-photo_blured">
                     </div>
                     <p>Дмитрий Квашнин <br> <br> Ответит на ваши вопросы и организует встречу.</p>
-                    <a href="https://t.me/cosmovisioner" class="footer__author-link" target="_blank">Телеграмм</a>
+                    <a href="https://t.me/cosmovisioner" class="footer__author-link" target="_blank">Телеграм</a>
                 </div>
 
                 <div class="footer__author">
@@ -690,8 +693,8 @@
                             class="quote__portraint-photo quote__portraint-photo_blured">
                     </div>
                     <p>Сергей Клейн <br> <br>
-                        Поможет разобраться <br> в вашей задаче <br> и предложит решение.</p>
-                    <a href="https://t.me/klein_sergey" class="footer__author-link" target="_blank">Телеграмм</a>
+                        Поможет разобраться <br> в вашей задаче <br> и предложит решение</p>
+                    <a href="https://t.me/klein_sergey" class="footer__author-link" target="_blank">Телеграм</a>
                 </div>
 
             </div>
@@ -713,7 +716,7 @@
             <div class="logos">
                 <a class="logos__item" href="https://vk.com/sputnikfilms" target="_blank"><img
                         src="../images/logos/vk.svg" alt=""></a>
-                <a class="logos__item" href="https://vimeo.com/sputnikfilmspro/videos" target="_blank"><img
+                <a class="logos__item" href="https://vimeo.com/sputnikfilmspro" target="_blank"><img
                         src="../images/logos/vimeo.svg" alt=""></a>
 
             </div>

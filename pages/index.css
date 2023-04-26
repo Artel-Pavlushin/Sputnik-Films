@@ -857,7 +857,7 @@
   padding: 0;
   position: relative;
   z-index: 3;
-    top: 0px;
+  top: 0px;
   left: 0px;
   grid-row: 1;
   grid-column: 1;
@@ -1246,7 +1246,7 @@ input:focus::placeholder {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
   gap: 2.5vw;
-height: 92px;
+  height: 92px;
   color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1492,7 +1492,7 @@ height: 92px;
   width: calc(100% - 204px);
 }
 
-.team__title{
+.team__title {
   margin: 0 auto;
   flex: 1;
   justify-content: center;
@@ -1613,12 +1613,12 @@ height: 92px;
 }
 
 .team__author-text {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 12px;
-width: 100%;
+  width: 100%;
 
 
 }
@@ -1644,7 +1644,7 @@ width: 100%;
   width: 100%;
 
 
-  padding: 8px 4px; 
+  padding: 8px 4px;
   transition: 0.3s;
 
 
@@ -1662,21 +1662,21 @@ width: 100%;
   gap: 32px;
 }
 
-.news__link>a:hover  {
+.news__link>a:hover {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.news__link>p:first-of-type  {
+.news__link>p:first-of-type {
   color: rgba(255, 255, 255, 0.4);
 }
 
-.news__link:hover{
+.news__link:hover {
   opacity: 0.7;
-} 
+}
 
-.news__link:hover>img{
+.news__link:hover>img {
   opacity: 0.7;
-} 
+}
 
 
 
@@ -1689,13 +1689,13 @@ width: 100%;
   flex-direction: column;
 
   gap: 1em;
-  
+
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 
 }
 
-.backstage__head{
+.backstage__head {
   padding-left: 36px;
 }
 
@@ -1747,7 +1747,7 @@ width: 100%;
 .nominations {
   width: 100%;
 
-  max-width: 460px;
+  max-width: 500px;
 
   margin: 0 auto;
   display: flex;
@@ -1761,12 +1761,12 @@ width: 100%;
 }
 
 
-#email{
+#email {
   display: none;
 }
 
 
-H2{
+H2 {
   font-weight: 400;
   margin: 0;
 }
@@ -1813,6 +1813,35 @@ a:active {
 }
 
 
-.medium-blur{
+.medium-blur {
   filter: blur(12px);
+}
+
+
+
+#footer-anchor {
+  padding-top: 72px;
+  margin-top: -72px;
+}
+
+
+
+.rewards {
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: end;
+
+}
+
+
+#reward {
+  background-color: rgba(0, 0, 0, 0.0);
+  box-shadow: none;
+  backdrop-filter: none;
+  margin: 0;
+  width: 90px;
+  height: 90px;
 }
