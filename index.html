@@ -12,14 +12,14 @@
     <div class="header-background"></div>
     <main class="content">
         <header class="header">
-            <a href="#" class="contact" onclick="copyToClipboard()";>
+            <button href="#" class="contact" onclick="copyToClipboard()";>
                 <p style="display: none;" id="text-to-copy">hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">[</p>
                 <p class="contact__text" id="text-display" onmouseover="changeText1('скопировать')"
                     onclick="changeText2('скопированно'); copyToClipboard();" onmouseout="changeback1('hello@sputnikfilms.ru')">
                     hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
-            </a>
+            </button>
             <img src="./images/__logo.png" alt="логотип" class="header__logo">
             <a class="anchor-button" href="#footer-anchor">
                 <p class="anchor-button__text" id="header-arrow">→</p>
@@ -777,13 +777,13 @@
 
         <div class="footer__head">
             <h2 class="footer__form-header">обсудить проект</h2>
-            <a class="contact contact_footer">
+            <button class="contact contact_footer" onclick="copyToClipboard()";>
                 <p class="contact__bracket contact__text">[</p>
                 <p class="contact__text" id="text-display1" onmouseover="changeText('скопировать')"
                     onclick="changeText3('скопированно')" onmouseout="changeback('hello@sputnikfilms.ru')">
                     hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
-            </a>
+            </button>
             <div class="footer__anchor-container">
                 <a class="anchor-button anchor-button-bottom" href="https://t.me/cosmovisioner" target="_blank" id="footer-anchor">
                     <p class="anchor-button__text">Телеграм</p>
