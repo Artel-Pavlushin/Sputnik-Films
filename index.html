@@ -12,11 +12,10 @@
     <div class="header-background"></div>
     <main class="content">
         <header class="header">
-            <button href="#" class="contact" onclick="copyToClipboard()";>
+            <button href="#" class="contact" id="contact" onclick="todo()"; onmouseout="backtext()">
                 <p style="display: none;" id="text-to-copy">hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">[</p>
-                <p class="contact__text" id="text-display" onmouseover="changeText1('скопировать')"
-                    onclick="changeText2('скопированно'); copyToClipboard();" onmouseout="changeback1('hello@sputnikfilms.ru')">
+                <p class="contact__text" id="text-display">
                     hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
             </button>
@@ -274,7 +273,7 @@
                     <article class="tab4">
                         <div class="tabs__content-container">
                             <div class="tabs__lead-block">
-                                <p class="tabs__lead-text">Летаем на спортивных дронах с помощью VR-очков, делаем
+                                <p class="tabs__lead-text">Летаем на спортивных дронах <br> с помощью VR-очков, делаем
                                     Full-fpv ролики <br> и внедряем в проекты.
                                 </p>
                                 <div class="tabs__lead-tags">
@@ -779,8 +778,8 @@
             <h2 class="footer__form-header">обсудить проект</h2>
             <button class="contact contact_footer" onclick="copyToClipboard()";>
                 <p class="contact__bracket contact__text">[</p>
-                <p class="contact__text" id="text-display1" onmouseover="changeText('скопировать')"
-                    onclick="changeText3('скопированно')" onmouseout="changeback('hello@sputnikfilms.ru')">
+                <p class="contact__text" id="text-display1"
+                    onclick="changeText3('_______скопировано_________')" onmouseout="changeback('hello@sputnikfilms.ru')">
                     hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
             </button>
@@ -830,8 +829,8 @@
 
                 <div class="footer__author">
                     <div class="quote__portraint">
-                        <img src="../images/Фото.png" alt="" class="quote__portraint-photo">
-                        <img src="../images/Фото.png" alt=""
+                        <img src="./images/Фото.png" alt="" class="quote__portraint-photo">
+                        <img src="./images/Фото.png" alt=""
                             class="quote__portraint-photo quote__portraint-photo_blured">
                     </div>
                     <p>Дмитрий Квашнин<br> <br>Ответит на вопросы<br> и организует встречу</p>
@@ -840,8 +839,8 @@
 
                 <div class="footer__author">
                     <div class="quote__portraint">
-                        <img src="../images/Фото2.png" alt="" class="quote__portraint-photo">
-                        <img src="../images/Фото2.png" alt=""
+                        <img src="./images/Фото2.png" alt="" class="quote__portraint-photo">
+                        <img src="./images/Фото2.png" alt=""
                             class="quote__portraint-photo quote__portraint-photo_blured">
                     </div>
                     <p>Сергей Клейн <br> <br>
@@ -867,9 +866,9 @@
             <div></div>
             <div class="logos">
                 <a class="logos__item" href="https://vk.com/sputnikfilms" target="_blank"><img
-                        src="../images/logos/vk.svg" alt=""></a>
+                        src="./images/logos/vk.svg" alt=""></a>
                 <a class="logos__item" href="https://vimeo.com/sputnikfilmspro" target="_blank"><img
-                        src="../images/logos/vimeo.svg" alt=""></a>
+                        src="./images/logos/vimeo.svg" alt=""></a>
 
             </div>
         </div>
@@ -884,6 +883,8 @@
     <script src="./tab-script.js"></script>
     <script src="./contact.js"></script>
     <script src="./email.js"></script>
+    <script src="./change-text.js"></script>
+    <script src="./todo.js"></script>
 </body>
 
 </html>

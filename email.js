@@ -23,3 +23,4 @@ function copyToClipboard2() {
     document.execCommand('copy');
     document.body.removeChild(el);
 }
+

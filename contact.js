@@ -24,46 +24,46 @@ function changeText(text) {
     display.innerHTML = text;
 }
 function changeText3(text) {
-    var display = document.getElementById('text-display1');
+    var display = document.getElementById('text-display');
     display.innerHTML = "";
     display.innerHTML = text;
 }
 function changeback(text) {
-    var display = document.getElementById('text-display1');
+    var display = document.getElementById('text-display');
     display.innerHTML = "";
     display.innerHTML = text;
 }
 
 
 function changeText4(text) {
-    var display = document.getElementById('text-display1');
+    var display = document.getElementById('text-display');
     display.innerHTML = "";
     display.innerHTML = text;
 }
 function changeback(text) {
-    var display = document.getElementById('text-display1');
+    var display = document.getElementById('text-display');
     display.innerHTML = "";
     display.innerHTML = text;
 }
 
 function changeText6(text) {
-    var display = document.getElementById('text-display1');
+    var display = document.getElementById('text-display');
     display.innerHTML = "";
     display.innerHTML = text;
 }
 function changeback(text) {
-    var display = document.getElementById('text-display1');
+    var display = document.getElementById('text-display');
     display.innerHTML = "";
     display.innerHTML = text;
 }
 
 function changeText7(text) {
-    var display = document.getElementById('text-display1');
+    var display = document.getElementById('text-display');
     display.innerHTML = "";
     display.innerHTML = text;
 }
 function changeback(text) {
-    var display = document.getElementById('text-display1');
+    var display = document.getElementById('text-display');
     display.innerHTML = "";
     display.innerHTML = text;
 }
