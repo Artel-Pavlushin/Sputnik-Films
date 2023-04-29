@@ -8,7 +8,14 @@
 
     grid-row: 1;
     grid-column: 1;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
+
+
 
 #video-container{
     grid-row: 2;
