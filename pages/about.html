@@ -12,14 +12,13 @@
     <div class="header-background"></div>
     <main class="content">
         <header class="header">
-            <a href="#" class="contact" onclick="copyToClipboard()";>
+            <button href="#" class="contact" id="contact" onclick="todo()" ; onmouseout="backtext()">
                 <p style="display: none;" id="text-to-copy">hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">[</p>
-                <p class="contact__text" id="text-display" 
-                    onclick="changeText2('скопировано'); copyToClipboard();" onmouseout="changeback1('hello@sputnikfilms.ru')">
+                <p class="contact__text" id="text-display">
                     hello@sputnikfilms.ru</p>
                 <p class="contact__bracket contact__text">]</p>
-            </a>
+            </button>
             <img src="../images/__logo.png" alt="логотип" class="header__logo">
             <a class="anchor-button" href="#footer-anchor">
                 <p class="anchor-button__text" id="header-arrow">→</p>
@@ -130,19 +129,22 @@
                 <div class="rewards">
                     <a href="https://vk.com/unknownfilmfestival?w=wall-133062901_946 " target="_blank"
                         class="logos__item" id="reward"><img src="../images/nomination01.png" alt=""></a>
-                    <a href="https://vk.com/tamgdenashdom?w=wall-211402154_176 " target="_blank" class="logos__item" id="reward"><img
-                            src="../images/nomination02.png" alt=""></a>
+                    <a href="https://vk.com/tamgdenashdom?w=wall-211402154_176 " target="_blank" class="logos__item"
+                        id="reward"><img src="../images/nomination02.png" alt=""></a>
                     <a href="https://moscowshorts.com/ru/programma-pokaza-filmov-pobediteley-moscow-shorts-sentyabr-2022/ "
-                        target="_blank" class="logos__item" id="reward"><img src="../images/nomination03.png" alt=""></a>
+                        target="_blank" class="logos__item" id="reward"><img src="../images/nomination03.png"
+                            alt=""></a>
                     <a href="https://shortshotfest.com/" target="_blank" class="logos__item" id="reward"><img
                             src="../images/nomination04.png" alt=""></a>
-                    <a href="https://lampa.film/fest/perm2022/schedule/festivalnyy-pokaz-tam-gde-nash-dom/" target="_blank"
-                        class="logos__item" id="reward"><img src="../images/nomination05.png" alt=""></a>
+                    <a href="https://lampa.film/fest/perm2022/schedule/festivalnyy-pokaz-tam-gde-nash-dom/"
+                        target="_blank" class="logos__item" id="reward"><img src="../images/nomination05.png"
+                            alt=""></a>
                 </div>
             </section>
             <ul class="news__list">
                 <li class="news__item">
-                    <a href="https://moviestart.ru/2022/07/11/ulichnye-ekstremalnye-vidy-sporta-budut-predstavleny-v-filme-podderzhannom-fprk/" target="_blank" class="news__link">
+                    <a href="https://moviestart.ru/2022/07/11/ulichnye-ekstremalnye-vidy-sporta-budut-predstavleny-v-filme-podderzhannom-fprk/"
+                        target="_blank" class="news__link">
                         <p>moviestart.ru</p>
                         <p>Уличные экстремальные виды спорта будут представлены в фильме,
                             поддержанном ФПРК</p>
@@ -151,7 +153,8 @@
                 </li>
 
                 <li class="news__item">
-                    <a href="https://moviestart.ru/2022/09/05/dok-pobeditel-sibirskogo-pitchinga-debyutantov-vyhodit-v-rossijskij-prokat/" target="_blank" class="news__link">
+                    <a href="https://moviestart.ru/2022/09/05/dok-pobeditel-sibirskogo-pitchinga-debyutantov-vyhodit-v-rossijskij-prokat/"
+                        target="_blank" class="news__link">
                         <p>moviestart.ru</p>
                         <p>Док-победитель Сибирского питчинга дебютантов выходит в
                             российский прокат</p>
@@ -186,7 +189,8 @@
                 </li>
 
                 <li class="news__item">
-                    <a href="https://newsnn.ru/news/2022-12-21/dva-nizhegorodskih-goroda-zasvetilis-v-kino-2621451" target="_blank" class="news__link">
+                    <a href="https://newsnn.ru/news/2022-12-21/dva-nizhegorodskih-goroda-zasvetilis-v-kino-2621451"
+                        target="_blank" class="news__link">
                         <p>newsnn.ru</p>
                         <p>Два нижегородских города засветились в кино</p>
                         <img src="../images/news_img06.png" alt="">
@@ -198,7 +202,7 @@
         </section>
 
 
-        
+
 
         <section class="backstage">
             <h2 class="backstage__head">БЭКСТЕЙДЖ:</h2>
@@ -228,10 +232,10 @@
 
             <div class="footer__head">
                 <h2 class="footer__form-header">обсудить проект</h2>
-                <button class="contact contact_footer" onclick="copyToClipboard()";>
+                <button href="#" class="contact contact_footer" id="contact" onclick="todo()"; onmouseout="backtext()">
+                    <p style="display: none;" id="text-to-copy">hello@sputnikfilms.ru</p>
                     <p class="contact__bracket contact__text">[</p>
-                    <p class="contact__text" id="text-display1"
-                        onclick="changeText4('скопирован')" onmouseout="changeback('hello@sputnikfilms.ru')">
+                    <p class="contact__text" id="text-display">
                         hello@sputnikfilms.ru</p>
                     <p class="contact__bracket contact__text">]</p>
                 </button>
@@ -327,7 +331,7 @@
 
             <div class="footer__bottom">
                 <img src="../images/__logo.png" alt="логотип" class="footer__logo">
-                <a href="#" class="pavlushin">Задизайнили в артели павлушина</a>
+                <a href="https://www.behance.net/pavlushin" class="pavlushin" target="_blank">Задизайнили в артели павлушина</a>
                 <p class="copyright">© Sputnik Films 2023</p>
             </div>
 
@@ -335,6 +339,8 @@
         <script src="../tab-script.js"></script>
         <script src="../contact.js"></script>
         <script src="../email.js"></script>
+        <script src="../change-text.js"></script>
+        <script src="../todo.js"></script>
 </body>
 
 </html>
