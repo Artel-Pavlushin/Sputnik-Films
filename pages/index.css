@@ -217,7 +217,7 @@
   margin: 0;
   padding-top: 36px;
   font-weight: 400;
-  font-size: 44px;
+  font-size: 42px;
   line-height: 125%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -227,7 +227,7 @@
 
 @media screen and (max-width: 1439px) {
   .tabs__lead-text {
-    padding-top: 2.5vw;
+    padding-top: 2.4vw;
     font-size: 2.8vw;
     max-width: 50.83vw;
   }
